@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "asdtechtutorial",
+	"version": "${version}",
+	"name": "ASDtechtutorial",
+	"description": "Tutorial MOD For ASD Tech Club!",
+	"authors": [
+		"laith :3"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/asdtechtutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"prez.asdtechtutorial.ASDtechtutorial"
+		],
+		"client": [
+			"prez.asdtechtutorial.ASDtechtutorialClient"
+		]
+	},
+	"mixins": [
+		"asdtechtutorial.mixins.json",
+		{
+			"config": "asdtechtutorial.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
